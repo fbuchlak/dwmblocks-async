@@ -5,8 +5,7 @@
 ```sh
 git clone https://github.com/fbuchlak/dwmblocks-async.git
 cd dwmblocks-async
-mkdir -p ~/.config/dwmblocks-async/scripts
-cp -r ./scripts ~/.config/dwmblocks-async/
+./sync.sh
 sudo make install
 ```
 
