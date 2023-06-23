@@ -47,6 +47,11 @@ int updateStatus(BarStatus *status) {
             strcat(status->current, block->output);
         }
     }
+
+#if TRAILING_DELIMITER
+    strcat(status->current, DELIMITER);
+#endif
+
     return strcmp(status->current, status->previous);
 }
 
